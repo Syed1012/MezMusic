@@ -5,7 +5,7 @@ const HeaderTest = () => {
     <nav className="bg-white border-fuchsia-200 dark:bg-fuchsia-700 rounded-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-serif">
+          <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-gray-950 font-serif">
             Mez-Music
           </span>
         </a>
@@ -56,7 +56,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-fuchsia-700 rounded md:bg-transparent md:text-fuchsia-700 md:p-0 dark:text-white md:dark:text-gray-950"
+                className="block py-2 px-3 text-lg text-white bg-fuchsia-700 rounded md:bg-transparent md:text-fuchsia-700 md:p-0 dark:text-white md:dark:text-gray-950"
                 aria-current="page"
               >
                 Home
@@ -65,7 +65,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-white md:dark:hover:text-fuchsia-500 dark:hover:bg-fuchsia-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 About
               </a>
@@ -73,7 +73,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-white md:dark:hover:text-fuchsia-500 dark:hover:bg-fuchsia-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Albums
               </a>
@@ -81,7 +81,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-white md:dark:hover:text-fuchsia-500 dark:hover:bg-fuchsia-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 PremiumPlans
               </a>
@@ -89,7 +89,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-white md:dark:hover:text-fuchsia-500 dark:hover:bg-fuchsia-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 SignUp
               </a>
@@ -97,7 +97,7 @@ const HeaderTest = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-white md:dark:hover:text-fuchsia-500 dark:hover:bg-fuchsia-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Login
               </a>
