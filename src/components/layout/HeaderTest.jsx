@@ -1,14 +1,20 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const HeaderTest = () => {
+  const navigate = useNavigate();
+
   return (
-    <nav className="bg-white border-fuchsia-200 dark:bg-fuchsia-700 rounded-md">
+    <nav className="bg-white border-fuchsia-200 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link
+          to={"/"}
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-gray-950 font-serif">
             Mez-Music
           </span>
-        </a>
+        </Link>
 
         <form className="w-80 mx-auto">
           <label
@@ -52,56 +58,43 @@ const HeaderTest = () => {
         </form>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-fuchsia-100 rounded-lg bg-fuchsia-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-fuchsia-700 md:dark:bg-fuchsia-700 dark:border-fuchsia-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-white bg-fuchsia-700 rounded md:bg-transparent md:text-fuchsia-700 md:p-0 dark:text-white md:dark:text-gray-950"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Albums
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                PremiumPlans
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                SignUp
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Login
-              </a>
-            </li>
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-fuchsia-100 rounded-lg bg-fuchsia-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+            <Link
+              to={"/"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              Home
+            </Link>
+            <Link
+              to={"/about"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              About
+            </Link>
+            <Link
+              to={"/albums"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              Albums
+            </Link>
+            <Link
+              to={"/premiumplans"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              PremiumPlans
+            </Link>
+            <Link
+              to={"/signup"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              SignUp
+            </Link>
+            <Link
+              to={"/login"}
+              className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              Login
+            </Link>
           </ul>
         </div>
       </div>
