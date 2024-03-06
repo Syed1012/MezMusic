@@ -1,8 +1,12 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HeaderTest = () => {
-  const navigate = useNavigate();
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <nav className="bg-white border-fuchsia-200 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-md">
@@ -16,48 +20,51 @@ const HeaderTest = () => {
           </span>
         </Link>
 
-        <form className="w-80 mx-auto">
-          <label
-            htmlFor="default-search"
-            className="mb-2 text-sm font-medium text-fuchsia-900 sr-only dark:text-white"
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="block text-gray-800 dark:text-white focus:outline-none"
           >
-            Search
-          </label>
-          <div className="relative">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            {showMenu ? (
               <svg
-                className="w-4 h-4 text-white-500 dark:text-fuchsia-300"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
                 fill="none"
-                viewBox="0 0 20 20"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
                 <path
-                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </div>
-            <input
-              type="search"
-              id="default-search"
-              className="block w-full p-4 ps-10 text-sm text-white-900 border rounded-lg bg-white-50 dark:bg-fuchsia-950 dark:border-fuchsia-600 dark:placeholder-white-400 dark:text-white"
-              placeholder="Search Albums, Songs..."
-              required
-            />
-            <button
-              type="submit"
-              className="text-white absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-fuchsia-950 dark:hover:bg-fuchsia-900"
-            >
-              Search
-            </button>
-          </div>
-        </form>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
 
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div
+          className={`md:flex w-full md:w-auto ${
+            showMenu ? "block" : "hidden"
+          }`}
+          id="navbar-default"
+        >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-fuchsia-100 rounded-lg bg-fuchsia-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
             <Link
               to={"/"}
