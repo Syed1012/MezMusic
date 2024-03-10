@@ -5,6 +5,7 @@ import HomePage from "./components/pages/HomePage.jsx";
 import Login from "./components/pages/Login.jsx";
 import BtmPlyr from "./components/layout/BtmPlyr.jsx";
 import NewPlayer from "./components/layout/NewPlayer.jsx";
+import MusicCard from "./components/layout/MusicCard.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/btmplayer" element={<BtmPlyr />} />
         <Route path="/newplayer" element={<NewPlayer />} />
+        <Route path="/music" element={<MusicCard />} />
       </Routes>
     </>
   );

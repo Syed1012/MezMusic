@@ -12,9 +12,9 @@ const HomePage = () => {
       <div className="container">
         <CardLay />
       </div>
-      <div className="audioplayer">
+      {/* <div className="audioplayer">
         <NewPlayer />
-      </div>
+      </div> */}
     </>
   );
 };

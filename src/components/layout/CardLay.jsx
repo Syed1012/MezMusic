@@ -1,34 +1,64 @@
 import React from "react";
-import "./Carlay.css";
 import Imga from "../../assets/indie.jpg";
 
 const CardLay = () => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-64 h-80 bg-white border border-gray-200 rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden group ">
       <a href="#">
-        <img className="rounded-t-lg" src={Imga} alt="Not there" />
+        <img
+          className="rounded-lg w-full h-60 object-cover transition-transform duration-300 transform group-hover:scale-110"
+          src={Imga}
+          alt="404-Error"
+        />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          {/* Button favourite */}
+          <button className="text-white hover:text-red-500 focus:outline-none mx-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={30}
+              height={30}
+              fill="currentColor"
+              className="bi bi-heart"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+          </button>
+          {/* Button play */}
+          <button className="text-white hover:text-blue-500 focus:outline-none mx-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={60}
+              height={60}
+              fill="currentColor"
+              className="bi bi-play-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+            </svg>
+          </button>
+          {/* Button 3-Dots */}
+          <button className="text-white hover:text-green-500 focus:outline-none mx-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={30}
+              height={30}
+              fill="currentColor"
+              className="bi bi-three-dots"
+              viewBox="0 0 16 16"
+            >
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+            </svg>
+          </button>
+        </div>
       </a>
+
       <div className="p-5">
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            Music 1
           </h5>
         </a>
-        <a
-          href="#"
-          className="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Click to Play
-        </a>
-        <div className="flex items-center mt-4">
-          <button className="mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-              <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
-            </svg>
-            clock
-          </button>
-          <p className="text-sm text-gray-500">Duration: 2:30</p>
-        </div>
       </div>
     </div>
   );
