@@ -5,7 +5,10 @@ const NewPlayer = () => {
     <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 flex justify-center w-full p-2 ">
       <div className="w-2/3">
         {/* Main Container Edit */}
-        <div className="bg-black text-white opacity-75 border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl sm:p-10 sm:pb-8 lg:p-6 xl:p-3 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-2 items-center" style={{height:"9rem"}}>
+        <div
+          className="bg-black text-white opacity-75 border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl sm:p-10 sm:pb-8 lg:p-6 xl:p-3 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-2 items-center"
+          style={{ height: "9rem" }}
+        >
           {/* Image and Music Item Name */}
           <div className="flex items-center">
             <img
@@ -18,9 +21,7 @@ const NewPlayer = () => {
             />
             {/* Music Item Name */}
             <div className="flex-auto font-semibold">
-              <p className="dark:text-slate-50 text-lg">
-                Music By: Music Name
-              </p>
+              <p className="dark:text-slate-50 text-lg">Music By: Music Name</p>
             </div>
           </div>
           {/* Music Progress bar */}

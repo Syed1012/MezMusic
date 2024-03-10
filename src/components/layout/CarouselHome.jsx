@@ -9,13 +9,7 @@ import nikImg from "../../assets/electro-music.jpg";
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
-  const images = [
-    logoIMg,
-    travisImg,
-    covImg,
-    blackImg,
-    nikImg,
-  ];
+  const images = [logoIMg, travisImg, covImg, blackImg, nikImg];
 
   useEffect(() => {
     let intervalId;
