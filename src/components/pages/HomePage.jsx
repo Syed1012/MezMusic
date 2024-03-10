@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "../layout/CarouselHome";
 import CardLay from "../layout/CardLay";
-
+import NewPlayer from "../layout/NewPlayer";
 
 const HomePage = () => {
   return (
@@ -10,9 +10,11 @@ const HomePage = () => {
         <Carousel />
       </div>
       <div className="container">
-      <CardLay />
+        <CardLay />
       </div>
-      
+      <div className="audioplayer">
+        <NewPlayer />
+      </div>
     </>
   );
 };
