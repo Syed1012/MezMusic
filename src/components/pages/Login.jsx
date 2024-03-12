@@ -86,18 +86,19 @@ const Login = () => {
             <button
               type="submit"
               className="w-full bg-purple-500 text-white font-bold py-2 rounded shadow-md hover:bg-purple-700"
+              style={{marginTop:"15px"}}
             >
               Login
             </button>
 
             <div className="loweritems">
-              <span className="mt-6 text-center font-mono">
-                <Link>Forgot-Password</Link>
+              <span className="mt-6 hover:underline text-center font-serif">
+                <Link to={"/"}>Forgot-Password</Link>
               </span>
-              <p className="mt-3 font-mono">
+              <p className="mt-3 font-serif font-semibold">
                 Are you new here{" "}
-                <Link className="ml-1 hover:underline font-mono">
-                  Click-Here
+                <Link to={"/signup"} className="ml-1 bg-indigo-100 p-1 rounded hover:underline font-serif">
+                  SignUp
                 </Link>
               </p>
             </div>
