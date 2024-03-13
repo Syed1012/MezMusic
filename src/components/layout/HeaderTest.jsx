@@ -85,7 +85,7 @@ const HeaderTest = () => {
               Albums
             </Link>
             <Link
-              to={"/premiumplans"}
+              to={"/prices"}
               className="block py-2 px-3 text-lg text-fuchsia-900 rounded hover:bg-fuchsia-100 md:hover:bg-transparent md:border-0 md:hover:text-fuchsia-700 md:p-0 dark:text-gray-950 md:dark:hover:text-white dark:hover:bg-white-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >
               PremiumPlans

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --pinkish-red: #c35a74;
+  --medium-blue: #307baa;
+  --greenish-blue: #53bab5;
+  --bright-orange: #ff7445;
+  --white-smoke: #f5f5f4;
+  --white: #fff;
+  --dark-gray: #7d7c7c;
+  --black: #000;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 586px;
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background: var(--white);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 20%);
+}
+
+.title {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.basic .title {
+  background: #EDAEF9;
+}
+
+.standard .title {
+  background: #65F4CD;
+}
+
+.business .title {
+  background: #A0B5EB;
+}
+
+.view {
+  display: block;
+  width: 100%;
+  padding: 30px 0 20px;
+
+  background: var(--white-smoke);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  width: 100px;
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.amount {
+  font-size: 2.8em;
+  font-weight: bolder;
+}
+
+.detail {
+  margin: auto 0 auto 5px;
+  width: 70px;
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 15px;
+  color: #000000;
+}
+
+.description {
+  margin: 30px auto;
+  font-size: 0.8em;
+  color: #0a0909;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 10px;
+}
+
+li::before {
+  content: "";
+  background-image: url("https://i.postimg.cc/ht7g996V/check.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.button {
+  margin: 0 auto 30px;
+}
+
+button {
+  height: 40px;
+  width: 250px;
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: black;
+  border: 2px solid var(--dark-gray);
+  border-radius: 50px;
+
+  background: transparent;
+}
+
+button:hover {
+  transition: 0.5s;
+  border: none;
+
+  background: fuchsia;
+}
+
+/* Responsiveness:Start */
+@media screen and (max-width: 970px) {
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .standard,
+  .business {
+    margin-top: 25px;
+  }
+}
+/* Responsiveness:End */
