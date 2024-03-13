@@ -127,24 +127,24 @@ li::before {
   margin-right: 10px;
 }
 
-.button {
+.btn {
   margin: 0 auto 30px;
 }
 
-button {
+.btn {
   height: 40px;
   width: 250px;
-  font-size: 0.7em;
-  font-weight: bold;
+  font-size: 10px;
   letter-spacing: 0.5px;
   color: black;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid black;
   border-radius: 50px;
-
+  font-weight: bolder;
+  
   background: transparent;
 }
 
-button:hover {
+.btn:hover {
   transition: 0.5s;
   border: none;
 

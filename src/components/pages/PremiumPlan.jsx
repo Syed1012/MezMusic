@@ -29,8 +29,8 @@ const PremiumPlan = () => {
               <li>Aliquid, quasi repellat!</li>
             </ul>
           </div>
-          <div className="button">
-            <button type="submit">START FREE 7 DAYS TRIAL</button>
+          <div className="btn">
+            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
           </div>
         </div>
         <div className="standard box">
@@ -57,8 +57,8 @@ const PremiumPlan = () => {
               <li>Aliquid, quasi repellat!</li>
             </ul>
           </div>
-          <div className="button">
-            <button type="submit">START FREE 7 DAYS TRIAL</button>
+          <div className="btn">
+            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
           </div>
         </div>
         <div className="business box">
@@ -85,8 +85,8 @@ const PremiumPlan = () => {
               <li>Aliquid, quasi repellat!</li>
             </ul>
           </div>
-          <div className="button">
-            <button type="submit">START FREE 7 DAYS TRIAL</button>
+          <div className="btn">
+            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
           </div>
         </div>
       </div>
