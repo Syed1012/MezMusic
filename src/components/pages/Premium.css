@@ -31,8 +31,8 @@ section {
   height: 586px;
   width: 300px;
   border-radius: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 
   background: var(--white);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 20%);
