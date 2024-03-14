@@ -9,7 +9,7 @@ const ListContainer = () => {
             <th className="p-5">Music-Img</th>
             <th>Music Name</th>
             <th>Artist name</th>
-            <th >Trending number</th>
+            <th>Trending number</th>
           </tr>
         </thead>
         <tbody className="">
@@ -17,31 +17,31 @@ const ListContainer = () => {
             <td className="w-[100px] p-10">INV001</td>
             <td>Paid</td>
             <td>$250.00</td>
-            <td >$250.00</td>
+            <td>$250.00</td>
           </tr>
           <tr className="shadow-md">
             <td className="w-[100px] p-10">INV002</td>
             <td>Pending</td>
             <td>$150.00</td>
-            <td >$150.00</td>
+            <td>$150.00</td>
           </tr>
           <tr className="shadow-md">
             <td className="w-[100px] p-10">INV003</td>
             <td>Unpaid</td>
             <td>$350.00</td>
-            <td >$350.00</td>
+            <td>$350.00</td>
           </tr>
           <tr className="shadow-md">
             <td className="w-[100px] p-10">INV004</td>
             <td>Paid</td>
             <td>$450.00</td>
-            <td >$450.00</td>
+            <td>$450.00</td>
           </tr>
           <tr className="shadow-md">
             <td className="w-[100px] p-10">INV005</td>
             <td>Paid</td>
             <td>$550.00</td>
-            <td >$550.00</td>
+            <td>$550.00</td>
           </tr>
         </tbody>
       </table>
