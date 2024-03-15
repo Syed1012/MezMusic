@@ -1,3 +1,5 @@
+// src/components/pages/SignUp.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -9,61 +11,61 @@ const SignUp = () => {
         <form className="space-y-4">
           {/* Input Username */}
           <div>
-            <label htmlFor="username" className="font-medium flex items-start">
+            <label htmlFor="username" className="font-medium flex items-start font-serif">
               Username
             </label>
             <input
               type="text"
               id="username"
               placeholder="Enter name"
-              className="mt-3 h-10 text-center block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+              className="mt-3 font-serif h-10 text-center block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
               autoComplete="off"
             />
           </div>
           {/* Input Email */}
           <div>
-            <label htmlFor="email" className="font-medium flex items-start">
+            <label htmlFor="email" className="font-medium  font-serif flex items-start">
               Email
             </label>
             <input
               type="text"
               id="email"
               placeholder="Enter Email"
-              className="mt-3 h-10 text-center block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+              className="mt-3 h-10 text-center font-serif block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
               autoComplete="off"
             />
           </div>
           {/* Input password */}
           <div>
-            <label htmlFor="password" className="font-medium flex items-start">
+            <label htmlFor="password" className=" font-serif font-medium flex items-start">
               Password
             </label>
             <input
               type="password"
               id="password"
               placeholder="Enter Password"
-              className="mt-3 h-10 text-center block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+              className="mt-3 h-10 text-center font-serif block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
               autoComplete="off"
             />
           </div>
           {/* Input phone */}
           <div>
-            <label htmlFor="phone" className="font-medium flex items-start">
+            <label htmlFor="phone" className="font-medium font-serif flex items-start">
               Phone
             </label>
             <input
               type="text"
               id="phone"
               placeholder="Enter Phone no."
-              className="mt-3 h-10 text-center block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+              className="mt-3 h-10 text-center font-serif block w-full rounded border-gray-300 shadow-inner shadow-purple-500/40 hover:shadow-purple-950/40 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
               autoComplete="off"
             />
           </div>
           {/* SignUp Button */}
           <button
             type="submit"
-            className="w-full bg-purple-500 text-white font-bold py-2 rounded shadow-md hover:bg-purple-700"
-            style={{marginTop:"15px"}}
+            className="w-full font-serif bg-purple-500 text-white font-bold py-2 rounded shadow-md hover:bg-purple-700"
+            style={{marginTop:"20px"}}
           >
             SignUp
           </button>
