@@ -22,6 +22,12 @@ connectDB();
 // User registration and login routes
 app.use("/api/auth", authRoutes);
 
+// Testing / route
+app.get("/",(req, res)=>{
+  return res.json("Welcome to MezMusic");
+})
+
+
 // PORT
 const PORT = 5109;
 

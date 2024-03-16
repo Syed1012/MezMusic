@@ -47,6 +47,20 @@ const Login = () => {
     }
   };
 
+  const handleGoogleLogin = async (e) => {
+    const firebase = await import("firebase/app");
+    await import("firebase/auth");
+
+    const provider = new firebase.default.auth.GoogleAuthProvider();
+    try {
+      const result = await firebase.default.auth().signInWithPopup(provider);
+      const user = result.user;
+      console.log(user);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <div className="flex mt-6 justify-center items-center h-screen">
@@ -92,11 +106,26 @@ const Login = () => {
             <button
               type="submit"
               value="submit"
-              className="w-full bg-purple-500 text-white font-bold py-2 font-serif rounded shadow-md hover:bg-purple-700"
+              className="w-full bg-purple-200 text-black font-bold py-2 font-serif rounded shadow-md hover:bg-purple-700 hover:text-white"
               style={{ marginTop: "15px" }}
             >
               Login
             </button>
+            {/* Login with Google */}
+            <div className="flex items-center justify-center rounded ">
+              <button
+                onClick={handleGoogleLogin}
+                className="px-4 py-2 border flex items-center justify-center gap-2 bg-purple-200 font-bold hover:bg-purple-700 text-black border-slate-200 w-full rounded-lg hover:text-white font-serif  hover:shadow transition duration-150"
+              >
+                <img
+                  className="w-6 h-6"
+                  src="https://www.svgrepo.com/show/475656/google-color.svg"
+                  loading="lazy"
+                  alt="google logo"
+                />
+                <span>Login with Google</span>
+              </button>
+            </div>
 
             <div className="loweritems">
               <span className="mt-6 hover:underline text-center font-serif">
