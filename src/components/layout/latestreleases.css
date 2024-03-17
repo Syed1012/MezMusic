@@ -1,0 +1,52 @@
+.tableauto {
+  width: 100%;
+  align-items: center;
+}
+
+/* .tableauto td {
+  background-color: rgb(171, 69, 171);
+} */
+
+.tableauto th,
+.tableauto td {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.tableauto tr:last-child td {
+  border-bottom: none;
+}
+
+/* .btan{
+  background-color: antiquewhite !important;
+} */
+
+.scrollbarcustom {
+  max-height: 80px; /* Adjust the max height as needed */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(76, 45, 76) transparent; /* thumb color track color */
+  transition: smooth 1.5s;
+}
+
+.scrollbarcustom::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbarcustom::-webkit-scrollbar-track {
+  background-color: #c4c4c4;
+  border-radius: 25px;
+}
+
+.scrollbarcustom::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 25px;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    transparent 100%,
+    rgba(0, 0, 0, 1) 75%,
+    transparent
+  );
+}
