@@ -1,3 +1,5 @@
+// src/components/pages/PremiumPlan.jsx
+
 import React from "react";
 import "./Premium.css";
 
@@ -30,7 +32,9 @@ const PremiumPlan = () => {
             </ul>
           </div>
           <div className="btn">
-            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
+            <button className="btn" type="submit">
+              START FREE 7 DAYS TRIAL
+            </button>
           </div>
         </div>
         <div className="standard box">
@@ -58,7 +62,9 @@ const PremiumPlan = () => {
             </ul>
           </div>
           <div className="btn">
-            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
+            <button className="btn" type="submit">
+              START FREE 7 DAYS TRIAL
+            </button>
           </div>
         </div>
         <div className="business box">
@@ -86,7 +92,9 @@ const PremiumPlan = () => {
             </ul>
           </div>
           <div className="btn">
-            <button className="btn" type="submit">START FREE 7 DAYS TRIAL</button>
+            <button className="btn" type="submit">
+              START FREE 7 DAYS TRIAL
+            </button>
           </div>
         </div>
       </div>

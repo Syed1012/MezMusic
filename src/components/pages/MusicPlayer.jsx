@@ -1,23 +1,24 @@
+// src/components/pages/HomePage.jsx
+
 import React from "react";
-import { useEffect, useState } from "react"; 
+import { useEffect, useState } from "react";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons"; // for customazing the icons
 
-
 const MusicPlayer = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [play, { pause, duration, sound }] = useSound(qala);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [play, { pause, duration, sound }] = useSound(qala);
 
-    const playingButton = () => {
-        if (isPlaying) {
-          pause(); // this will pause the audio
-          setIsPlaying(false);
-        } else {
-          play(); // this will play the audio
-          setIsPlaying(true);
-        }
-      };
+  const playingButton = () => {
+    if (isPlaying) {
+      pause(); // this will pause the audio
+      setIsPlaying(false);
+    } else {
+      play(); // this will play the audio
+      setIsPlaying(true);
+    }
+  };
   return (
     <div className="component">
       <h2>Playing Now</h2>
