@@ -9,17 +9,36 @@
 
 .tableauto th,
 .tableauto td {
-  padding: 0.75rem;
+  padding: 0.5rem;
   text-align: center;
+  /* border: 1px solid black; */
 }
 
-.tableauto tr:last-child td {
-  border-bottom: none;
+.tablehead {
+  text-align: center;
+  border-radius: 10px;
 }
 
-/* .btan{
-  background-color: antiquewhite !important;
-} */
+.image {
+  padding: 15px !important;
+  width: 10%;
+}
+
+.songname {
+  width: 30%;
+}
+
+.artistname {
+  width: 15%;
+}
+
+.trending {
+  width: 15%;
+}
+
+.bun {
+  width: 15%;
+}
 
 .scrollbarcustom {
   max-height: 80px; /* Adjust the max height as needed */

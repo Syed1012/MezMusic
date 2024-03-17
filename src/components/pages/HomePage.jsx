@@ -18,6 +18,10 @@ const HomePage = () => {
       {/* Music Cards */}
       <HorizontalScrollCard />
 
+      <h1 className="my-12 flex font-bold text-4xl font-serif">
+        Latest Releases..
+      </h1>
+
       {/* Table container of releases */}
       <LatestReleases />
 
