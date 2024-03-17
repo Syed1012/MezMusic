@@ -1,6 +1,7 @@
+// src/components/layout/HorizontalScrollCard.jsx
+
 import React from "react";
 import CardLay from "../layout/CardLay";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const HorizontalScrollCard = () => {
   const scrollContainerRef = React.useRef(null);

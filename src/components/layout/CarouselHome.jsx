@@ -1,3 +1,5 @@
+// src/components/layout/CarouselHome.jsx
+
 import React, { useState, useEffect } from "react";
 import "./carouselStyle.css";
 import logoIMg from "../../assets/musiclabm.jpg";
