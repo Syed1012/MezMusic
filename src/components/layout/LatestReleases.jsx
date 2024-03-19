@@ -84,11 +84,13 @@ const LatestReleases = () => {
       <div className="mt-8 max-h-80 bg-black font-bold text-white opacity-75 border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-2xl scrollbarcustom shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]">
         <table className="tableauto rounded-2xl overflow-hidden">
           <thead className="tablehead">
-            <th className=" bg-black font-bold">#</th>
-            <th className=" bg-black font-bold">Track</th>
-            <th className=" bg-black font-bold">Artist</th>
-            <th className=" bg-black font-bold">Duration</th>
-            <th className=" bg-black font-bold"></th>
+            <tr>
+              <th className=" bg-black font-bold">#</th>
+              <th className=" bg-black font-bold">Track</th>
+              <th className=" bg-black font-bold">Artist</th>
+              <th className=" bg-black font-bold">Duration</th>
+              <th className=" bg-black font-bold"></th>
+            </tr>
           </thead>
           <tbody>
             {releases.map((release) => (

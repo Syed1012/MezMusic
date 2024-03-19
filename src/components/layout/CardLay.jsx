@@ -1,13 +1,13 @@
 import React from "react";
-import Imga from "../../assets/indie.jpg";
+import { Link } from "react-router-dom";
 
-const CardLay = () => {
+const CardLay = ({ imageSrc, name }) => {
   return (
     <div className="w-64 h-80 bg-white border border-gray-200 rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden group ">
-      <a href="#">
+      <Link path="#">
         <img
           className="rounded-lg w-full h-60 object-cover transition-transform duration-300 transform group-hover:scale-110"
-          src={Imga}
+          src={imageSrc}
           alt="404-Error"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -51,15 +51,40 @@ const CardLay = () => {
             </svg>
           </button>
         </div>
-      </a>
+      </Link>
 
       <div className="p-5">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Music 1
-          </h5>
+          <h7 className="mb-2 text-xl flex font-serif font-medium tracking-tight text-gray-900 dark:text-white">
+            {name}
+          </h7>
         </a>
       </div>
+    </div>
+  );
+};
+
+const CardList = () => {
+  const imgSrc = [
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    "https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp",
+    // Add more image sources as needed
+  ];
+
+  return (
+    <div className="grid grid-cols-3 gap-4">
+      {imgSrc.map((src, index) => (
+        <CardLay key={index} imageSrc={src} />
+      ))}
     </div>
   );
 };

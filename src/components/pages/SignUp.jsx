@@ -36,7 +36,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex mt-6 justify-center items-center h-screen">
+    <div className="flex mt-28 justify-center items-center h-screen">
       <div className="bg-white p-8 w-full sm:w-96 shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] group hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] rounded-3xl">
         <h2 className="text-2xl font-bold mb-6 font-serif">Sign-Up</h2>
         <form className="space-y-4" onSubmit={handleSubmit} method="POST">
