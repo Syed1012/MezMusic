@@ -14,7 +14,7 @@ const HomePage = () => {
       <Carousel />
 
       <h1 className="my-12 flex font-bold text-4xl font-serif">
-        New Releases..
+        Trending...
       </h1>
 
       {/* Music Cards */}
@@ -41,7 +41,7 @@ const HomePage = () => {
       <TopArtists />
 
       <h1 className="my-16 flex font-bold text-4xl font-serif">
-        Best of all time...
+        Re-Releases...
       </h1>
 
       {/* <TopCharts /> */}
