@@ -4,12 +4,11 @@ import React from "react";
 import "./latestreleases.css";
 
 const LatestReleases = () => {
-  // Dummy data for testing
   const releases = [
     {
       id: 1,
       src: "https://img.wynk.in/unsafe/100x100/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431980878_20240119151825/8903431980878/1705658705508/resources/8903431980878.jpg",
-      songName: "Akhiyaan Gulaab (From Teri Baaton Mein Aisa Uljha Jiya)",
+      songName: "Akhiyaan Gulaab",
       artistName: "Mitraz",
       trendingPosition: "2:51",
     },
@@ -31,7 +30,7 @@ const LatestReleases = () => {
       id: 4,
       src: "https://img.wynk.in/unsafe/100x100/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431969415_20231027141317/8903431969415/1698397206663/resources/8903431969415.jpg",
       songName: "Satranga (From ANIMAL)",
-      artistName: "Raghav, AseesKaur",
+      artistName: "Raghav",
       trendingPosition: "2:33",
     },
     {
@@ -59,8 +58,8 @@ const LatestReleases = () => {
       id: 8,
       src: "https://img.wynk.in/unsafe/100x100/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431981844_20240201001421/8903431981844/1706727618579/resources/8903431981844.jpg",
       songName:
-        "Teri Baaton Mein Aisa Uljha Jiya (From Teri Baaton Mein Aisa Uljha Jiya)",
-      artistName: "Raghav, Tanishk",
+        "Teri Baaton Mein Aisa Uljha Jiya",
+      artistName: "Raghav",
       trendingPosition: "3:10",
     },
     {
@@ -74,7 +73,7 @@ const LatestReleases = () => {
       id: 10,
       src: "https://img.wynk.in/unsafe/100x100/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/00602465274158_20240220000616118/1708392016875/24UMGIM16564_T1_cvrart.jpg",
       songName: "Daaku",
-      artistName: "Badshah, Sharvi Yadav",
+      artistName: "Badshah",
       trendingPosition: "3:15",
     },
   ];
